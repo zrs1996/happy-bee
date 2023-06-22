@@ -1,0 +1,72 @@
+.happy-bee-menu {
+  .happy-bee-menu-ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+  }
+  .default-menu-ul {
+    .menu-li:not(.group-menu) {
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  .menu-li {
+    list-style: none;
+    cursor: pointer;
+  }
+  .menu-label {
+    margin: 0 4px;
+    border-radius: 8px;
+    padding-left: 40px;
+    padding-right: 16px;
+    color: rgba(0, 0, 0, 0.88);
+    &:hover {
+      background-color: #f0f0f0;
+    }
+    >span {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.88);
+    }
+    >span:last-child {
+      margin-left: 6px;
+      font-weight: normal;
+      font-size: 12px;
+      opacity: 0.67;
+    }
+  }
+  .group-menu {
+    >.menu-label {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.45);
+      cursor: default;
+      &:hover {
+        background-color: transparent;
+      }
+      &::after {
+        position: relative;
+        top: 12px;
+        display: block;
+        width: calc(100% - 20px);
+        height: 1px;
+        background: rgb(5 5 5 / 6%);
+        content: '';
+      }
+    }
+  }
+  .ul-group-menu {
+    .menu-li:not(.group-menu) {
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  .active {
+    >.menu-label {
+      color: #1677ff;
+      background-color: #e6f4ff;
+    }
+  }
+}

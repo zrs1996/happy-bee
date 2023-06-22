@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "../",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "happy-bee": ["src/index.ts"],
+      "dumi/theme/*": [".dumi/theme/*"]
+    }
+  },
+  "include": ["./**/*", "../site/theme/template/Content"]
+}

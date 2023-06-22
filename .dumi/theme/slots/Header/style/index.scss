@@ -1,0 +1,24 @@
+.nav-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+  padding: 0 24px;
+  a {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    span {
+      color: #1677ff;
+      text-decoration: none;
+      background-color: transparent;
+      outline: none;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    img {
+      height: 32px;
+    }
+  }
+}

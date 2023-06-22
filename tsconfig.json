@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    /* js compile */
+    "paths": { // 相对于baseUrl 配置导出路径（这里根据自己项目执行修改）
+      "happy-bee": ["src/index.ts"],
+      "happy-bee/lib": ["src/index.ts"],
+    },
+    "declaration": true,
+    "declarationDir": "lib",
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src",
+    "components"
+  ],
+  "exclude": ["node_modules", "lib", "es"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
