@@ -13,9 +13,9 @@
     "declaration": true,
     "declarationDir": "lib",
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
+    // "moduleResolution": "bundler",
+    // "allowImportingTsExtensions": true,
+    // "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
@@ -30,9 +30,9 @@
     "components"
   ],
   "exclude": ["node_modules", "lib", "es"],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+  // "references": [
+  //   {
+  //     "path": "./tsconfig.node.json"
+  //   }
+  // ]
 }
